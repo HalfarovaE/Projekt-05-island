@@ -24,23 +24,27 @@ body {
     margin:0;
     width:100%;
     height: 100%;
+  
     }
+
 
 .textace {
     background-color: white;
 }
+
 .titulek {
     text-align: center;
     color: white;
     margin: 0;
-    padding:15px 20px;
+    padding:15px 25px;
+
 }
         
         
 .perex {
     color: white;
     text-align: center;
-    padding: 10px 0px;
+    padding: 10px 15px;
     margin: 0;
 }
         
@@ -69,6 +73,7 @@ body {
     padding-left: 35px;
     padding-right: 25px;
     padding-top: 35px;
+    display: block;
 }
 
 .menu li {
@@ -111,10 +116,9 @@ img {width: 100%;
 }
 
 h2 {
-
-padding-top: 20px;
-padding-bottom: 20px;
-position:relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position:relative;
 }
 
 h2::after {
@@ -141,6 +145,8 @@ h2::after {
     padding-left: 20px;
 
 }
+
+
 
 /*--
 .galerie::before {
@@ -186,101 +192,33 @@ h2::after {
 
 
 @media (min-width:500px) and (max-width:1000px) {
+
+    .perex {padding: 5px 20px;}
     .menu {
         display: flex;
         justify-content: space-around;
         padding: 15px;
-}
-.galerie {display: flex;
-flex-wrap: wrap;}
-
-.foto img {
-    width: 100%;
-    height: 100%;
-    transition: 0.4s;
-    display: block;
-}
-.foto {
-    position: relative;
-    overflow: hidden;
-}
-
-.popisek {
-    width:100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    position: absolute;
-    }
-
-    .foto:hover .popisek {
-    transform: translateY(-100%);
-    }
-
-    img .Island,
-    img .Island2,
-    img .Island3 {position: relative;}
-
-    .popisek1 {position: absolute;
-    right: 0;
-padding-right:10px;}
-}
-
-
-@media (min-width:1000px) {
-    .titulek{
-        text-align: center;
-        color: white;
-        margin: 0;
-        padding-top: 15px;
-        
-    }
-
-    h1 {font-size: 68px;
-    margin-top: 80px;}
-    .perex {
-        color: white;
-       text-align: center;
-        padding:20px 150px;
-        max-width: 960px;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 16px;
-    }
-    .zacatek {
-    display: flex;
-    flex-direction: column;
-    }
-
-    .uvod {background: url;}
-    .kontejner {
-    position: relative;
-    }
-   .textace {
-    position: absolute;
-    margin-top:-25px;
-    margin-left: 15%;
-    margin-right: 15%;
-    background-color: white;
-    max-width: 960px;
-   }
-
-    .flexbox1 {display: flex;
-    }
-    .menu {
-    padding-top:20px;
     }
 
     .menu li {
-    justify-content: flex-start;
-    width: 170px;
-    padding: 5px 0;
+        font-size: 14px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex: 1 1 500px;
+        border-top: 1px solid silver;
+        border-bottom: 1px solid silver;
+    }
+
+    .radek1, 
+    .radek2,
+    .radek3 {
+        border-right: 1px solid silver;
     }
 
     .galerie {
-    display: flex;
-    flex-wrap: wrap;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .foto img {
@@ -289,6 +227,126 @@ padding-right:10px;}
         transition: 0.4s;
         display: block;
     }
+
+    .foto {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .popisek {
+        width:100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        position: absolute;
+    }
+
+    .foto:hover .popisek {
+        transform: translateY(-100%);
+    }
+
+    img .Island,
+    img .Island2,
+    img .Island3 {
+        position: relative;
+    }
+
+    .popisek1 {
+        position: absolute;
+        right: 0;
+        padding-right:10px;
+    
+    }
+}
+
+
+@media (min-width:1000px) {
+
+    .titulek{
+        text-align: center;
+        color: white;
+        margin: 0;
+        padding-top: 15px;  
+    }
+
+    h1 {
+        font-size: 68px;
+        margin-top: 80px;
+    }
+
+    .perex {
+        color: white;
+        text-align: center;
+        padding: 20px 350px;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .autor {padding-bottom:70px;}
+
+    .zacatek {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .kontejner {
+        position: relative;
+    }
+
+   .textace {
+        position: absolute;
+        margin-top:-25px;
+        margin-left: 15%;
+        margin-right: 15%;
+        background-color: white;
+        max-width: 960px;
+        box-shadow: 5px 5px 5px #888888;
+    }
+    h2::after {
+        content: " ";
+        display: block;
+        background-color: blue;
+        width:80px;
+        height: 5px;
+        margin-top:25px;
+        position: absolute;
+        left:-50px;
+    }
+    
+    .odstavec1::before,
+    .odstavec2::before {
+        content: " ";
+        display: block;
+        width: 100px;
+        height: 5px;
+        margin-top:40px;
+    }
+    .flexbox1 {
+        display: flex;
+    }
+    .menu {
+        padding-top:20px;
+    }
+
+    .menu li {
+        justify-content: flex-start;
+        width: 170px;
+        padding: 5px 0;
+    }
+
+    .galerie {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 1 960px;
+    }
+
+    .foto img {
+        width: 320px;
+        height: 100%;
+        transition: 0.4s;
+        display: block;
+    }
+
     .foto {
         position: relative;
         overflow: hidden;
@@ -306,32 +364,52 @@ padding-right:10px;}
         }
 
     .procisland {
-    padding-right: 250px;
-    padding-left: 50px;
-    padding-bottom:50px;
+        padding-right: 250px;
+        padding-left: 50px;
+        padding-bottom:50px;
     }
 
     .covidet {
-    padding-left: 260px;
-    padding-right: 50px;
-    padding-bottom:20px;
+        padding-left: 260px;
+        padding-right: 50px;
+        padding-bottom:20px;
     }
 
     .mista {
-    padding-left: 260px;
-    padding-right: 50px;
-    padding-bottom:20px;
+        padding-left: 260px;
+        padding-right: 50px;
+        padding-bottom:20px;
     }
-
-    h2 .fotogalerie::after {
-    content: " ";
-    display: block;
-    background-color: blue;
-    width:100px;
-    height: 5px;
-    margin-top:25px;
-    position: absolute;
+    .nadpisfoto {
+        padding-left: 60px;
+        margin-bottom: 45px;
     }
-
+    .nadpisfoto::after {
+        content: " ";
+        display: block;
+        background-color: blue;
+        width:80px;
+        height: 5px;
+        margin-top:25px;
+        position: absolute;
+        left: 0px;
+    }
     
+    .foto::before {
+        margin-top: 30px;
+    }
+
+
+    img .Island,
+    img .Island2,
+    img .Island3 {
+        position: relative;
+    }
+
+    .popisek1 {
+        position: absolute;
+        right: 0;
+        padding-right:10px;
+        margin-bottom: 25px;
+    }
 }
