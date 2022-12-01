@@ -24,23 +24,20 @@ body {
     margin:0;
     width:100%;
     height: 100%;
-  
-    }
-
+        }
 
 .textace {
-    background-color: white;
+    background-color: white;   
 }
 
 .titulek {
     text-align: center;
     color: white;
     margin: 0;
-    padding:15px 25px;
+    padding: 15px 25px;
 
 }
-        
-        
+             
 .perex {
     color: white;
     text-align: center;
@@ -56,6 +53,7 @@ body {
     height: 2px;
     margin:auto; 
     margin-top:30px;
+    opacity: 85%;
         }
         
 .autor {
@@ -64,8 +62,9 @@ body {
     text-align: center;
     margin:0;
     padding-top: 5px;
-    padding-bottom:35px;
+    padding-bottom:40px;
     font-size:14px;
+    opacity: 75%;
 }
         
    
@@ -79,7 +78,7 @@ body {
 .menu li {
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid silver;
+    border-bottom: 1px solid rgba(192, 192, 192, 0.3);
     padding: 5px 0;
 }
 
@@ -96,19 +95,23 @@ body {
 .mista {
     padding-left:20px;
     padding-right: 15px;
-    padding-top:15px;
+    padding-top:10px;
+    padding-bottom:30px;
+    
 }
 
 .mista {
-    padding-bottom: 10px;
+    margin-top: 20px;
 }
+
+
 img {width: 100%;
 }
 
 .popisek1 {
     color:silver;
     text-align: center;
-    margin-top:0;
+    margin:0;
 }
 
 .popisek1 a {
@@ -124,8 +127,8 @@ h2 {
 h2::after {
     content: " ";
     display: block;
-    background-color: blue;
-    width:100px;
+    background-color: rgb(72, 158, 208);
+    width:70px;
     height: 5px;
     margin-top:25px;
     position: absolute;
@@ -145,25 +148,19 @@ h2::after {
     padding-left: 20px;
 
 }
-
-
-
-/*--
-.galerie::before {
-    content: " ";
-    display: block;
-    width: 100px;
-    height: 5px;
+.nadpisfoto::after {
+    margin-top: 15px;
 }
---*/
-
 .foto { 
    text-align: center; 
 }
 
+
+
 .popisek{
     margin-top:0;
-    font-weight: bold;
+    color:silver;
+    font-weight: 600;
 }
 
 .popisek a {
@@ -172,14 +169,16 @@ h2::after {
 
 .popisek-copy {
     color: silver;
+    font-weight: lighter;
 }
 
 .paticka {
     padding-left: 20px;
     padding-bottom: 20px;
     padding-top:15px;
-    background-color: #f5f5f5;  
+    background-color: #f5f5f5;	
 }
+    
 
 .paticka a {
     color: silver;
@@ -188,7 +187,6 @@ h2::after {
 .paticka p {
     color: silver;
 }
-
 
 
 @media (min-width:500px) and (max-width:1000px) {
@@ -206,14 +204,14 @@ h2::after {
         flex-direction: row;
         justify-content: space-evenly;
         flex: 1 1 500px;
-        border-top: 1px solid silver;
-        border-bottom: 1px solid silver;
+        border-top: 1px solid rgba(192, 192, 192, 0.3);
+        border-bottom: 1px solid rgba(192, 192, 192, 0.3);
     }
 
     .radek1, 
     .radek2,
     .radek3 {
-        border-right: 1px solid silver;
+        border-right: 1px solid rgba(192, 192, 192, 0.3);
     }
 
     .galerie {
@@ -244,9 +242,7 @@ h2::after {
         transform: translateY(-100%);
     }
 
-    img .Island,
-    img .Island2,
-    img .Island3 {
+   .obrazek {
         position: relative;
     }
 
@@ -256,6 +252,7 @@ h2::after {
         padding-right:10px;
     
     }
+
 }
 
 
@@ -286,6 +283,7 @@ h2::after {
     .zacatek {
         display: flex;
         flex-direction: column;
+        margin-bottom: 20px;
     }
 
 
@@ -293,19 +291,21 @@ h2::after {
         position: relative;
     }
 
-   .textace {
+   .prostredek {
         position: absolute;
         margin-top:-25px;
         margin-left: 15%;
         margin-right: 15%;
         background-color: white;
         max-width: 960px;
-        box-shadow: 5px 5px 5px #888888;
+        box-shadow: 7px 7px 5px #888888;
+        
     }
+
     h2::after {
         content: " ";
         display: block;
-        background-color: blue;
+        background-color: rgb(72, 158, 208);
         width:80px;
         height: 5px;
         margin-top:25px;
@@ -387,7 +387,7 @@ h2::after {
     .nadpisfoto::after {
         content: " ";
         display: block;
-        background-color: blue;
+        background-color: rgb(72, 158, 208);
         width:80px;
         height: 5px;
         margin-top:25px;
@@ -398,18 +398,15 @@ h2::after {
     .foto::before {
         margin-top: 30px;
     }
-
-
-    img .Island,
-    img .Island2,
-    img .Island3 {
-        position: relative;
+    .mista {
+        margin-top: 20px;
     }
 
-    .popisek1 {
-        position: absolute;
-        right: 0;
-        padding-right:10px;
-        margin-bottom: 25px;
-    }
+.obrazek img {position: relative;}
+
+.popisek1 {position: absolute;
+right: 0;
+padding-right: 10px ;}
+
+
 }
