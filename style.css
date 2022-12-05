@@ -321,8 +321,8 @@ h2::after {
    .prostredek {
         position: absolute;
         margin-top:-25px;
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: 18%;
+        margin-right: 18%;
         background-color: white;
         max-width: 960px;
         box-shadow: 7px 7px 5px #888888;
@@ -368,7 +368,7 @@ h2::after {
     }
 
     .foto img {
-        width: 320px;
+        width: 310px;
         height: 100%;
         transition: 0.4s;
         display: block;
